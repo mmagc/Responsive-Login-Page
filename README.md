@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+Página de Login Responsiva
+Este repositório contém uma Página de Login Responsiva desenvolvida utilizando React.js. A página é totalmente responsiva, ajustando seu layout e elementos para diferentes tamanhos de tela, tornando-a adequada para usuários de desktop e mobile.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+Design Responsivo: Adapta-se a diferentes tamanhos de tela (mobile, tablet, desktop).
+Componentes React: Utiliza React para desenvolvimento baseado em componentes.
+Interface Amigável: Design limpo e minimalista para fácil navegação.
+Validação de Formulário: Validação básica do frontend usando React e JavaScript.
+Tecnologias Utilizadas
+React.js: Construção da interface com componentes reutilizáveis.
+CSS3: Estilização dos componentes e garantia de responsividade com media queries.
+JavaScript: Adição de funcionalidades dinâmicas e validação de formulários.
+Pré-visualização
 
-## Available Scripts
+![Screenshot da Página de Login Responsiva](./src/img/screenshot1.png)
+![Screenshot da Página de Login Responsiva](./src/img/screenshot2.png)
 
-In the project directory, you can run:
+Instalação
+Clone o repositório para sua máquina local:
 
-### `npm start`
+bash
+Copiar código
+git clone https://github.com/mmagc/Responsive-Login-Page.git
+Navegue até o diretório do projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copiar código
+cd Responsive-Login-Page
+Instale as dependências necessárias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copiar código
+npm install
+Inicie o servidor de desenvolvimento:
 
-### `npm test`
+bash
+Copiar código
+npm start
+Abra seu navegador e vá para http://localhost:3000 para ver a aplicação em ação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Como Usar
+Preencha seu nome de usuário e senha nos campos respectivos.
+Clique no botão Login para enviar o formulário.
+O formulário inclui validação básica para garantir que ambos os campos sejam preenchidos antes do envio.

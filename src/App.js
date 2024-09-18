@@ -1,5 +1,5 @@
 import './App.css';
-import logo from './Logo.png'; 
+import logo from './img/Logo.png'; 
 import googleLogo from './google-logo2.svg';
 import { useState } from 'react';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';  
