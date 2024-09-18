@@ -1,38 +1,773 @@
+*{
+  font-family: 'Poppins', sans-serif;
+
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+ 
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./teste-imagem.jpg);
+  height: 100vh; 
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+.sidebar {
+  width: 20%;
+  background-color: #fff;
+  color: #000;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+ 
+.logo {
+  width: 100px; 
+  margin-bottom: 20px;
+}
+
+ 
+h1 {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+ 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: -1rem;
+}
+
+ 
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ 
+label {
+  color: #000;
+  margin-bottom: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+ 
+input {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: .5rem;
+  font-size: 13px;
+  width: 19vw;
+  height: 1.5rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+.password-container{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+}
+
+.password-container input{
+  outline: none;
+  border: 0;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-75%); 
+  right: 10px; 
+  width: 20px; 
+  cursor: pointer;
+  color: #4D4D4D;
+
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+ 
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.toggle-label input {
+  display: none;
+}
+
+ 
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.toggle-label input:checked + .toggle-slider {
+  background-color: #4CAF50;
+}
+
+.toggle-label input:checked + .toggle-slider:before {
+  transform: translateX(20px);
+}
+
+.toggle-text {
+  color: #000;
+  font-size: 14px;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 5vw;
+  color: #52A5FF;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007AFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: .5rem;
+  width: 20vw;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);  /* Aumenta ligeiramente o botão */
+}
+
+button:active {
+  transform: scale(1);  
+}
+
+.separator {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.separator hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 1px solid #eceaea;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.google{
+  margin-top: 1.5rem;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.google-logo {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+button.google:hover {
+  background-color: #111;
+  transform: scale(1.05);  
+}
+
+button.google:active {
+  transform: scale(1);  
+}
+
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link span, .signup-link a {
+  display: inline-block;
+  margin-left: 5px; 
+}
+
+.signup-link a {
+  color: #007bff; 
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline; 
+}
+
+
+
+@media (max-width: 1024px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
   }
-  to {
-    transform: rotate(360deg);
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+
+  .login-form {
+    width: 100%; /* O formulário ocupa toda a largura */
+    max-width: 400px; /* Limite de largura máxima para o formulário */
+  }
+
+  .logo {
+    width: 90px;
+    
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  input {
+    font-size: 15px;
+    width: 100%; /* O input ocupa toda a largura */
+  }
+
+  button {
+    font-size: 15px;
+    width: 100%; /* O botão ocupa toda a largura */
+  }
+}
+
+@media (max-width: 1024px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+
+  .login-form {
+    width: 100%; /* O formulário ocupa toda a largura */
+    max-width: 400px; /* Limite de largura máxima para o formulário */
+  }
+
+  .logo {
+    width: 90px;
+    
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  input {
+    font-size: 15px;
+    width: 100%; /* O input ocupa toda a largura */
+  }
+
+  button {
+    font-size: 15px;
+    width: 100%; /* O botão ocupa toda a largura */
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente e horizontalmente */
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    padding: 2rem;
+  }
+
+
+  .login-form {
+    width: 100%; /* O formulário ocupa toda a largura */
+    max-width: 350px; /* Limite de largura máxima para o formulário */
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center; /* Centraliza o texto */
+  }
+
+  input {
+    font-size: 14px;
+    width: 100%; /* O input ocupa toda a largura */
+  }
+
+  button {
+    font-size: 14px;
+    width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start; 
+    align-items: center; 
+  } 
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+    width: 100vw;
+    height: 20rem;
+    margin-left: 20px;
+    order: 2;
+    }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 20px;
+    width: 100vw;
+    order: 1;
+    }
+
+  .login-form {
+    width: 100%; 
+    max-width: 300px;
+  }
+
+  .logo {
+    margin-top: 70px;
+    width: 90px;
+    order: 3;
+  }
+
+
+  h1 {
+    font-size: 24px;
+    text-align: center; 
+  }
+  label{
+    display: none;
+  }
+
+  input {
+    font-size: 14px;
+    width: 85vw; 
+    height: 2rem;
+  }
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 24rem;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 110px;
+    color: #52A5FF;
+  }
+
+  button {
+    font-size: 12px;
+    width: 90vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+  }
+
+  .eye-icon {
+    position: absolute;
+    right: -75px;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .signup-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    width: 24rem;
+  }
+  
+  .signup-link span, .signup-link a {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 390px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start; 
+    align-items: center; 
+  } 
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 7px;
+    width: 105vw;
+    height: 20rem;
+    order: 2;
+    }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+    width: 100vw;
+    order: 1;
+    }
+
+  .login-form {
+    width: 80%; 
+    max-width: 300px;
+  }
+
+  .logo {
+    margin-top: 70px;
+    width: 90px;
+    order: 3;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center; 
+  }
+  label{
+    display: none;
+  }
+
+  input {
+    font-size: 14px;
+    width: 88vw;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 24rem;
+    margin-left: 1rem;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 75px;
+  color: #52A5FF;
+}
+
+  button {
+    font-size: 12px;
+    width: 93vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4rem;
+  }
+  .eye-icon {
+    position: absolute;
+    right: -55px;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  .signup-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    width: 23rem;
+  }
+  
+  .signup-link span, .signup-link a {
+    display: inline-block;
+    margin-left: 5px; 
+  }
+}
+
+
+@media (max-width: 344px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: start; 
+    align-items: center; 
+  } 
+
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 22rem;
+    height: 20rem;
+    order: 2;
+    }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 3rem;
+    margin-bottom: 20px;
+    width: 20rem;
+    order: 1;
+    }
+
+  .login-form {
+    width: 80%; 
+    max-width: 300px;
+  }
+
+  .logo {
+    margin-top: 20px;
+    width: 60px; 
+    order: 3;
+  }
+
+
+  h1 {
+    font-size: 14px;
+    text-align: center; 
+  }
+  label{
+    display: none;
+  }
+
+  input {
+    font-size: 14px;
+    width: 18.5rem;
+    height: 2rem;
+    margin-left: 1rem;
+  }
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 24rem;
+    margin-left: 1rem;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 50px;
+  color: #52A5FF;
+}
+
+  button {
+    font-size: 12px;
+    width: 19.75rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .eye-icon {
+    position: absolute;
+    right: -45px;
+    width: 24px;
+    cursor: pointer;
+
+  }
+
+  .signup-link {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    width: 22rem;
+  }
+  
+  .signup-link span, .signup-link a {
+    display: inline-block;
+    margin-left: 5px; /* Pequeno espaçamento entre o texto e o link */
   }
 }
