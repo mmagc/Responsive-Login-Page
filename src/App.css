@@ -111,7 +111,7 @@ input::placeholder {
   position: absolute;
   top: 50%; 
   transform: translateY(-75%); 
-  right: 10px; 
+  right: 15px; 
   width: 20px; 
   cursor: pointer;
   color: #4D4D4D;
@@ -122,6 +122,8 @@ input::placeholder {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  margin-left: -10px;
+  margin-right: -25px;
 }
 
  
@@ -167,7 +169,7 @@ input::placeholder {
 }
 
 .toggle-label input:checked + .toggle-slider:before {
-  transform: translateX(20px);
+  transform: translateX(17px);
 }
 
 .toggle-text {
@@ -179,7 +181,7 @@ a {
   background-color: transparent;
   text-decoration: none;
   font-size: 12px;
-  margin-left: 5vw;
+  margin-left: 4vw;
   color: #52A5FF;
 }
 
@@ -205,7 +207,7 @@ button {
 
 button:hover {
   background-color: #0056b3;
-  transform: scale(1.05);  /* Aumenta ligeiramente o botão */
+  transform: scale(1.05);  
 }
 
 button:active {
@@ -275,9 +277,7 @@ button.google:active {
   text-decoration: underline; 
 }
 
-
-
-@media (max-width: 1024px) {
+@media (max-width: 1275px) {
   .App {
     display: flex;
     justify-content: center;
@@ -288,21 +288,21 @@ button.google:active {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 2rem;
   }
 
   .header {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 2rem;
   }
 
   .login-form {
-    width: 100%; /* O formulário ocupa toda a largura */
-    max-width: 400px; /* Limite de largura máxima para o formulário */
+    width: 100%; 
+    max-width: 400px; 
   }
 
   .logo {
@@ -312,17 +312,17 @@ button.google:active {
 
   h1 {
     font-size: 22px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
   }
 
   input {
     font-size: 15px;
-    width: 100%; /* O input ocupa toda a largura */
+    width: 100%; 
   }
 
   button {
     font-size: 15px;
-    width: 100%; /* O botão ocupa toda a largura */
+    width: 100%; 
   }
 }
 
@@ -337,21 +337,21 @@ button.google:active {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 2rem;
   }
 
   .header {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 2rem;
   }
 
   .login-form {
-    width: 100%; /* O formulário ocupa toda a largura */
-    max-width: 400px; /* Limite de largura máxima para o formulário */
+    width: 100%; 
+    max-width: 400px;
   }
 
   .logo {
@@ -361,17 +361,66 @@ button.google:active {
 
   h1 {
     font-size: 22px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
   }
 
   input {
     font-size: 15px;
-    width: 100%; /* O input ocupa toda a largura */
+    width: 100%; 
   }
 
   button {
     font-size: 15px;
-    width: 100%; /* O botão ocupa toda a largura */
+    width: 100%; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .login-form {
+    width: 100%; 
+    max-width: 400px; 
+  }
+
+  .logo {
+    width: 90px;
+    
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center; 
+  }
+
+  input {
+    font-size: 15px;
+    width: 100%; 
+  }
+
+  button {
+    font-size: 15px;
+    width: 100%;
   }
 }
 
@@ -379,29 +428,29 @@ button.google:active {
   .App {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente e horizontalmente */
+    align-items: center; 
   }
 
   .sidebar {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 2rem;
   }
 
   .header {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center;
     padding: 2rem;
   }
 
 
   .login-form {
-    width: 100%; /* O formulário ocupa toda a largura */
-    max-width: 350px; /* Limite de largura máxima para o formulário */
+    width: 100%; 
+    max-width: 350px; 
   }
 
   .logo {
@@ -410,12 +459,12 @@ button.google:active {
 
   h1 {
     font-size: 20px;
-    text-align: center; /* Centraliza o texto */
+    text-align: center; 
   }
 
   input {
     font-size: 14px;
-    width: 100%; /* O input ocupa toda a largura */
+    width: 100%; 
   }
 
   button {
@@ -522,7 +571,7 @@ a {
 
   .eye-icon {
     position: absolute;
-    right: -75px;
+    right: -70px;
     width: 24px;
     cursor: pointer;
   }
@@ -768,6 +817,6 @@ a {
   
   .signup-link span, .signup-link a {
     display: inline-block;
-    margin-left: 5px; /* Pequeno espaçamento entre o texto e o link */
+    margin-left: 5px; 
   }
 }
