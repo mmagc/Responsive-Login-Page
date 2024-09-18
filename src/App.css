@@ -22,6 +22,17 @@ body, html {
   width: 100vw;
 }
 
+.error {
+  color: #ff4d4d; 
+  font-size: 10px; 
+  margin-bottom: 5px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
+
  
 .sidebar {
   width: 20%;
@@ -480,6 +491,10 @@ button.google:active {
     align-items: center; 
   }
 
+  .error {
+    width: 90vw;
+    }
+
   .sidebar {
     width: 100%;
     height: 100vh;
@@ -595,6 +610,10 @@ a {
     justify-content: center;
     align-items: center; 
   }
+
+  .error {
+    width: 95vw;
+    }
 
   .sidebar {
     width: 100%;
@@ -714,6 +733,10 @@ a {
     justify-content: center;
     align-items: center; 
   }
+
+  .error {
+    width: 95vw;
+    }
 
   .sidebar {
     width: 100%;
