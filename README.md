@@ -20,6 +20,10 @@ Este repositório contém uma Página de Login Responsiva desenvolvida utilizand
 ![Screenshot da Página de Login Responsiva](./src/img/screenshot1.png)
 ![Screenshot da Página de Login Responsiva](./src/img/screenshot2.png)
 
+## Requisitos
+
+Para rodar esta aplicação, você precisa ter o [Node.js](https://nodejs.org/) e o [npm](https://www.npmjs.com/) instalados em sua máquina.
+
 ## Instalação
 
 1. Clone o repositório para sua máquina local:
